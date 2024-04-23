@@ -1,0 +1,25 @@
+{
+  "name": "jsfinalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBStrange1/JSFinalProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBStrange1/JSFinalProject/issues"
+  },
+  "homepage": "https://github.com/JBStrange1/JSFinalProject#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "path": "^0.12.7"
+  }
+}
