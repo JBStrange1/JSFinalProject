@@ -8,6 +8,7 @@ const root = path.join(__dirname,'public')
 app.use(express.json())
 app.use(express.static('public'))
 app.use('/api',require('./routes/public'))
+app.use('/api',require('./routes/admin'))
 
 app.get('/',(_,response)=>{
     response.sendFile('Home/home.html',{root})
