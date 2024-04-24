@@ -8,3 +8,14 @@ GET {{url}}/api/events
 ### Get menu
 
 GET {{url}}/api/menu
+
+### Add new menu item
+
+POST {{url}}/api/menu
+Content-Type: application/json
+
+{
+    "name": "Peach Cobbler",
+    "description": "Try our delicious peach cobbler made with freshly picked peaches from the farmers market",
+    "price": "$7.99"
+}
