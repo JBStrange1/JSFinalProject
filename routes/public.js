@@ -22,4 +22,11 @@ route.get('/events', async (_,response)=>{
     response.json(events)
 })
 
+route.get('/events/:id', async (request,response)=>{
+    const {id} = request.params
+    const collection = await getCollection('WheelyGoodBBQ','events')
+    const event = await collection.findOne({id:new ObjectId(id)})
+    response.json(event)
+})
+
 module.exports = route

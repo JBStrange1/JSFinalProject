@@ -8,3 +8,7 @@ GET {{url}}/api/events
 ### Get menu
 
 GET {{url}}/api/menu
+
+### get event by id
+
+GET {{url}}/api/events/
