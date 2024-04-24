@@ -1,0 +1,10 @@
+ 
+@url = http://localhost:3000
+
+### Get events
+
+GET {{url}}/api/events
+
+### Get menu
+
+GET {{url}}/api/menu
