@@ -12,3 +12,26 @@ GET {{url}}/api/menu
 ### get event by id
 
 GET {{url}}/api/events/
+
+### Add new menu item
+
+POST {{url}}/api/menu
+Content-Type: application/json
+
+{
+    "name": "Peach Cobbler",
+    "description": "Try our delicious peach cobbler made with freshly picked peaches from the farmers market",
+    "price": "$7.99"
+}
+
+### Update menu item
+
+PUT {{url}}/api/menu/662919947042626364552072
+Content-Type: application/json
+
+{
+    "name": "Pulled Pork Sandwich with Slaw",
+    "description": "New Description",
+    "price": "$14.99"
+}
+

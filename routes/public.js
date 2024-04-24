@@ -16,11 +16,35 @@ route.get('/menu', async (_,response)=>{
     response.json(items)
 })
 
+route.post('/menu', async (request,response)=>{
+    const { body } = request
+    const { name, description, price } = body
+    const menuItem = { name, description, price }
+
+    const collection = await getCollection('WheelyGoodBBQ','menu')
+    const result = await collection.insertOne(menuItem)
+    response.json(result)
+})
+
+route.put('/menu/:id', async(request,response) => {
+    const { body, params } = request
+    const { id } = params
+    const { name, description, price } = body
+    
+    const collection = await getCollection('WheelyGoodBBQ','menu')
+
+    const menuItem = await collection.findOne({_id: new ObjectId(id)})
+    const result = await collection.updateOne({_id: new ObjectId(id)}, { $set: { name, description, price} })
+    response.json(result)
+})
+
 route.get('/events', async (_,response)=>{
     const collection = await getCollection('WheelyGoodBBQ','events')
     const events = await collection.find().toArray()
     response.json(events)
 })
+
+
 
 route.get('/events/:id', async (request,response)=>{
     const {id} = request.params
