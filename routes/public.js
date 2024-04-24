@@ -16,10 +16,22 @@ route.get('/menu', async (_,response)=>{
     response.json(items)
 })
 
+route.post('/menu', async (request,response)=>{
+    const { body } = request
+    const { name, description, price } = body
+    const menuItem = { name, description, price }
+
+    const collection = await getCollection('WheelyGoodBBQ','menu')
+    const result = await collection.insertOne(menuItem)
+    response.json(result)
+})
+
 route.get('/events', async (_,response)=>{
     const collection = await getCollection('WheelyGoodBBQ','events')
     const events = await collection.find().toArray()
     response.json(events)
 })
+
+
 
 module.exports = route
