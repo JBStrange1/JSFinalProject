@@ -32,4 +32,11 @@ route.post('/menu', async (request,response)=>{
     response.json(result)
 })
 
+route.delete('/menu/:id', async(request,response) => {
+    const { id } = request.params
+    const collection = await getCollection('WheelyGoodBBQ','menu')
+    const result = await collection.deleteOne({_id: new ObjectId(id)})
+    response.json(result)
+})
+
 module.exports = route
