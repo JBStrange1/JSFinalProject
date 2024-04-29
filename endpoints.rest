@@ -10,8 +10,8 @@ GET {{url}}/api/events
 GET {{url}}/api/menu
 
 ### get event by id
-
-GET {{url}}/api/events/
+ 
+GET {{url}}/api/events/6628531979030ef22fdd0cf7
 
 ### Add new menu item
 
@@ -35,3 +35,6 @@ Content-Type: application/json
     "price": "$14.99"
 }
 
+### delete menu item
+
+DELETE {{url}}/api/menu/6630335e102f877d4232a16b
