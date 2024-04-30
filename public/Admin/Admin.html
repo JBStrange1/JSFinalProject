@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheely Good BBQ</title>
-    <link rel="stylesheet" href="/public/site.css">
+    <link rel="stylesheet" href="../site.css">
     <script src="Admin.js" defer></script>
 </head>
 <body>
@@ -21,20 +21,20 @@
             <ul class="eventsList">
 
             </ul>
-            <div>
+            <div class="eventInputs">
                 <input required class="eventName" type="text" >
-                <input required class="eventDate" type="time" >
+                <input required class="eventDate" type="text" >
                 <input required class="truckLocation" type="text" >
                 <input required class="hours" type="text">
                 <input type="submit" id="update_create" value="Create">
-                <input type="submit" id="delete" value="Delete">
+                <input type="submit" id="delete" value="Delete" hidden >
             </div>
         </form>
         <form>
             <ul class="menuList">
 
             </ul>
-            <div>
+            <div class="menuInputs">
                 <input required class="name" type="text" >
                 <input required class="description" type="text" >
                 <input required class="price" type="text" >
