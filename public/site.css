@@ -6,9 +6,7 @@ h1{
 h2{
     text-align: center;
 }
-main{
-    margin: 10px;
-}
+
 footer{
     text-align: center;
     width: 100%;
@@ -46,26 +44,26 @@ body{
     background-size: contain; /* Change 'cover' to 'contain' */
     background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
     background-position: center; 
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
-  }
-  
-  .text {
+}
+
+.text {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
     font-size: 16px; 
     text-align: center; 
-  }
+}
   
 html{
     width: 100%;
@@ -98,4 +96,87 @@ hr{
 }
 .price{
 float: right;
+    width: 60%;
+}
+
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+}
+
+.button button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4d5c6b;
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: bold;
+	transform: scale(1.3);
+	margin: 0 10px;
+
+	transition: all 0.5s ease;
+}
+
+.button button:hover {
+	background-color: #0e2f50;
+	transform: scale(1.1);
+}
+
+.card {
+    width: 260px;
+    height: 300px;
+    overflow: hidden;
+    background-color: lightgray;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+	cursor: pointer;
+
+	transition: all 0.5s ease;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card div {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 20%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	transition: all 0.5s ease;
+}
+
+.card:hover div {
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 50%;
+}
+
+.card div h1 {
+	font-size: 1.5rem;
+	white-space: nowrap;
+	text-align: center;
+	letter-spacing: 0.25rem;
+	transition: all 0.5s ease;
+}
+
+.card:hover div h1 {
+	letter-spacing: 0.5rem;
 }
