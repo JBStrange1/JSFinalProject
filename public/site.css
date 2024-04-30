@@ -6,6 +6,13 @@ h1{
 main{
     margin: 10px;
 }
+footer{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+}
 nav{
     text-align: center;
     margin: 1%;
@@ -65,4 +72,17 @@ main{
 }
 hr{
     margin:0;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.menuImage{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+.menuDescription{
+    width: 60%;
 }
