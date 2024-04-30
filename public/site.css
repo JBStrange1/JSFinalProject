@@ -10,6 +10,7 @@ h2{
 footer{
     text-align: center;
     width: 100%;
+    height: 100px;
     padding: 10px;
     bottom: 0;
 }
@@ -74,13 +75,20 @@ hr{
     margin:0;
 }
 .Menu{
-    overflow: hidden;
-    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
+.menuItem{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
 .menuImage{
     width: 30%;
     float: left;
     margin-right: 20px;
+    padding-bottom: 20px;
 }
 .menuDescription{
     width: 60%;
