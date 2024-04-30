@@ -93,6 +93,9 @@ hr{
     padding-bottom: 20px;
 }
 .menuDescription{
-    width: 60%;
+    width: calc(60% - 20px);
     float: right;
+}
+.price{
+float: right;
 }
