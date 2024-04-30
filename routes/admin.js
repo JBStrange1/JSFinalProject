@@ -39,4 +39,14 @@ route.delete('/menu/:id', async(request,response) => {
     response.json(result)
 })
 
+route.post('/events',async(request,response)=>{
+    const { body } = request
+    const { eventName, eventDate, truckLocation, hours } = body
+    const event = { eventName, eventDate, truckLocation, hours }
+
+    const collection = await getCollection('WheelyGoodBBQ','events')
+    const result = await collection.insertOne(event)
+    response.json(result)
+})
+
 module.exports = route
