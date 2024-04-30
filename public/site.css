@@ -1,0 +1,31 @@
+h1{
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+main{
+    margin: 10px;
+}
+nav{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gray;
+}
+header{
+    background-color: tan;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.description{
+    width: 100%;
+}
+.text{
+    width: auto;
+}
