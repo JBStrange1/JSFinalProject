@@ -74,29 +74,38 @@ main{
 hr{
     margin:0;
 }
-.Menu{
+.menu{
+    
     display: flex;
     flex-wrap: wrap;
 }
 .menuItem{
+    
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 20px;
 }
-
-
-.menuImage{
-    width: 30%;
+.imageContainer{
     float: left;
-    margin-right: 20px;
-    padding-bottom: 20px;
+    width: 35%;
+    max-height: 400px;
+    margin-right: 10px;
+    overflow: hidden;
 }
-.menuDescription{
+.menuImage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.description{
+    margin-top: 10px;
     width: calc(60% - 20px);
+    display: flex;
+    flex-direction: column;
     float: right;
 }
-.price{
-float: right;
-    width: 60%;
+.foodTitle{
+    text-align: center;
 }
 
 
