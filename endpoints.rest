@@ -10,7 +10,7 @@ GET {{url}}/api/events
 GET {{url}}/api/menu
 
 ### get event by id
- 
+
 GET {{url}}/api/events/6628531979030ef22fdd0cf7
 
 ### Add new menu item
@@ -22,6 +22,18 @@ Content-Type: application/json
     "name": "Peach Cobbler",
     "description": "Try our delicious peach cobbler made with freshly picked peaches from the farmers market",
     "price": "$7.99"
+}
+
+
+### add new event
+POST {{url}}/api/events
+Content-Type: application/json
+
+{
+    "eventName": "FVTC open house",
+    "eventDate": "10/21/25",
+    "truckLocation": "1825 N. Bluemound Drive, Appleton, WI 54914",
+    "hours":"12pm-3pm"
 }
 
 ### Update menu item
@@ -38,15 +50,3 @@ Content-Type: application/json
 ### delete menu item
 
 DELETE {{url}}/api/menu/6630335e102f877d4232a16b
-
-### add new event
-
-POST {{url}}/api/events
-Content-Type: application/json
-
-{
-    "eventName": "FVTC open house",
-    "eventDate": "10/21/25",
-    "truckLocation": "1825 N. Bluemound Drive, Appleton, WI 54914",
-    "hours":"12pm-3pm"
-}
