@@ -3,8 +3,37 @@ h1{
     text-align: center;
     margin:0;
 }
+body{
+    background: linear-gradient(to top, #595147, #CAA677);
+    margin: 0;
+}
 h2{
     text-align: center;
+}
+
+/*
+ .navigation {
+    padding-left: 450px;
+    padding-right: 450px;
+    display: flex;
+    justify-content: space-between;
+    
+ }
+*/ 
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    font-size: 28px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black; /* Change the color to match your design */
+}
+
+.navigation a:last-child {
+    margin-right: 0;
 }
 
 footer{
@@ -13,7 +42,6 @@ footer{
     height: 100px;
     padding: 10px;
     bottom: 0;
-    background-color: tan;
 }
 nav{
     text-align: center;
@@ -27,12 +55,18 @@ a:hover{
     color: gray;
 }
 header{
-    background-color: #d2b48c;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-body{
-    margin: 0;
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 250px;
 }
+
 .background-div{
     position: relative;
     display: inline-block; 
