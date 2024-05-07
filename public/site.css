@@ -9,6 +9,12 @@ body{
 h2{
     text-align: center;
 }
+ .navigation {
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    justify-content: space-between;
+ }
 
 footer{
     background-color: #846E52;
