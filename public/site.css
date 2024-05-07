@@ -11,16 +11,6 @@ h2{
     text-align: center;
 }
 
-/*
- .navigation {
-    padding-left: 450px;
-    padding-right: 450px;
-    display: flex;
-    justify-content: space-between;
-    
- }
-*/ 
-
 .navigation {
     display: flex;
 }
@@ -61,8 +51,8 @@ header{
     align-items: center;
 }
 .logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
     width: 250px;
 }
