@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheely Good BBQ</title>
+    <link rel="stylesheet" href="../site.css">
+    <script src="Admin.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Wheely Good BBQ</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/Menu">Menu</a>
+            <a href="/Contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form id="eventsForm">
+            <ul class="eventsList">
+
+            </ul>
+            <div class="eventInputs">
+                <input required class="eventName" type="text" >
+                <input required class="eventDate" type="text" >
+                <input required class="truckLocation" type="text" >
+                <input required class="hours" type="text">
+                <input type="submit" id="update_create" value="Create">
+                <input type="submit" id="delete" value="Delete" hidden >
+            </div>
+        </form>
+        <form>
+            <ul class="menuList">
+
+            </ul>
+            <div class="menuInputs">
+                <input required class="name" type="text" >
+                <input required class="description" type="text" >
+                <input required class="price" type="text" >
+                <input type="submit" id="update_create" value="Create">
+                <input type="submit" id="delete" value="Delete">
+            </div>  
+        </form>
+    </main>
+    <footer>
+        <small><p>&copy; 2024 Wheely Good BBQ LLC</p></small>
+        <small><p>Contact Us - <a href="/Contact">Contact</a></p></small>
+    </footer>
 </body>
 </html>
