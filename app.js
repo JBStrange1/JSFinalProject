@@ -23,9 +23,9 @@ app.get('/admin',(_,response)=>{
     response.sendFile('Admin/admin.html',{root})
 })
 
-app.get('*',(_,response)=>{
-    response.sendFile('404.html',{root})
-})
+// app.get('*',(_,response)=>{
+//     response.sendFile('404.html',{root})
+// })
 
 const message = `Server running: http://localhost:${port}`
 app.listen(port, () => console.log(message))
