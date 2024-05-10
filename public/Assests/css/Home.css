@@ -32,8 +32,8 @@
 }
 
 .card {
-    width: 260px;
-    height: 300px;
+    width: 360px;
+    height: 400px;
     overflow: hidden;
     background-color: lightgray;
     border-radius: 1rem;
@@ -45,6 +45,15 @@
 	cursor: pointer;
 
 	transition: all 0.5s ease;
+}
+
+.card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.card.show {
+    opacity: 1;
 }
 
 .card:hover {
