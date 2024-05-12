@@ -21,11 +21,10 @@
         }
 
         const updateCardWithFade = async (card, eventData) => {
-            card.classList.remove('show') // Remove 'show' class to trigger fade-out effect
-            await new Promise(resolve => setTimeout(resolve, 500)) // Wait for the fade-out effect to complete
+            card.classList.remove('show') 
+            await new Promise(resolve => setTimeout(resolve, 500)) 
             createCard(card, eventData)
-            
-            card.classList.add('show') // Add 'show' class to trigger fade-in effect
+            card.classList.add('show')
         }
 
         prevButton.addEventListener('click', () => {
@@ -38,7 +37,7 @@
             updateDisplay()
         })
 
-        updateDisplay() // Initial display
+        updateDisplay() 
     }
 
     const createCard = (card, eventData) => {
