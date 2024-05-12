@@ -2,6 +2,7 @@ h1{
     width: 100%;
     text-align: center;
     margin:0;
+    background-color: tan;
 }
 body{
     background: linear-gradient(to top, #595147, #CAA677);
