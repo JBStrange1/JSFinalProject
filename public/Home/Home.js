@@ -42,12 +42,12 @@
     }
 
     const createCard = (card, eventData) => {
-        const { eventName, eventDate, truckLocation, Hours } = eventData
+        const { eventName, eventDate, truckLocation, hours, imagePath } = eventData
         card.querySelector('.eventName').textContent = eventName
         card.querySelector('.eventDate').textContent = eventDate
         card.querySelector('.truckLocation').textContent = truckLocation
-        card.querySelector('.Hours').textContent = Hours
-        console.log(Hours)
+        card.querySelector('.Hours').textContent = hours
+        card.style.backgroundImage = `url(${imagePath})`;
     }
 
     await displayEvents()
