@@ -103,7 +103,7 @@ main{
 hr{
     margin:0;
 }
-.menu{
+#menuContainer{
     
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +133,7 @@ hr{
     flex-direction: column;
     float: right;
 }
-.foodTitle{
+.name{
     font-size: x-large;
     text-align: center;
 }
