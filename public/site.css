@@ -113,6 +113,7 @@ hr{
     width: 100%;
     margin-top: 20px;
     margin: 20px;
+    background-color: tan;
 }
 .imageContainer{
     float: left;
