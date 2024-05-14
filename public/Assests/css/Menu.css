@@ -1,0 +1,49 @@
+#menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    width: 100%;
+    margin-top: 20px;
+    margin: 20px;
+    background-color: tan;
+    opacity: 0; 
+    animation: fadeIn 0.5s ease forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.imageContainer {
+    float: left;
+    width: 35%;
+    max-height: 400px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.menuImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.description {
+    margin-top: 10px;
+    width: calc(60% - 20px);
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.name {
+    font-size: x-large;
+    text-align: center;
+}
