@@ -35,12 +35,18 @@
     object-fit: contain;
 }
 
-.description {
+.itemDescription {
     margin-top: 10px;
     width: calc(60% - 20px);
     display: flex;
     flex-direction: column;
     float: right;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 22px;
+    color: black;
 }
 
 .name {
