@@ -1,12 +1,12 @@
  
-@url = http://localhost:3000
+@url = http://localhost:3007
 
 ### Get events
 
 GET {{url}}/api/events
 
 ### Get menu
-
+  
 GET {{url}}/api/menu
 
 ### get event by id
