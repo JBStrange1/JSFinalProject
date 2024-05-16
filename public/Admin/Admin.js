@@ -222,3 +222,67 @@
 
 
 })()
+
+/*
+    // This code was Erich starting to work on the forms for the admin page. Chase finished his form and his code for this.
+    //this is code for the new forms for populating the select input for the form
+
+    const getEvents = async () => {
+        const response = await fetch('/api/events')
+        const events = await response.json()
+        return events
+    }
+
+    const getEventById = async (eventId) => {
+        const response = await fetch(`/api/events/${eventId}`)
+        const event = await response.json()
+        console.log(event)
+        return event
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+        const eventSelect = document.getElementById('eventSelect');
+        const eventNameInput = document.querySelector('.eventName');
+        const eventDateInput = document.querySelector('.eventDate');
+        const truckLocationInput = document.querySelector('.truckLocation');
+        const hoursInput = document.querySelector('.hours');
+        const imageInput = document.querySelector('.eventImage');
+    
+    const populateEventSelect = async () => {
+        const events = await getEvents();
+        console.log(events)
+        events.forEach(event => {
+            const option = document.createElement('option');
+            option.value = event._id;
+            option.textContent = event.eventName;
+            eventSelect.appendChild(option)
+        })
+    }
+
+    const updateFormInputs = async () => {
+        const selectedEventId = eventSelect.value;
+        if(selectedEventId)
+        {
+            const event = await getEventById(selectedEventId)
+            eventNameInput.value = event.eventName;
+            eventDateInput.value = event.eventDate;
+            truckLocationInput.value = event.truckLocation;
+            hoursInput.value = event.hours;
+            imageInput.value = event.imagePath;
+
+        }
+        else
+        {
+            eventNameInput.value = "";
+            eventDateInput.value = "";
+            truckLocationInput.value = "";
+            hoursInput.value = "";
+            imageInput.value = "";
+        }
+    }
+
+
+    await populateEventSelect()
+    await updateFormInputs()
+}) 
+*/
