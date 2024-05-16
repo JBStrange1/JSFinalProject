@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheely Good BBQ</title>
     <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="../Assests/css/Admin.css">
     <script src="Admin.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Wheely Good BBQ</h1>
-        <nav>
+        <img src="/Assests/img/logo-clear1.png" class="logo" >
+        <nav class="navigation">
             <a href="/">Home</a>
             <a href="/Menu">Menu</a>
             <a href="/Contact">Contact</a>
@@ -44,6 +45,117 @@
                 <input type="submit" id="Mdelete" value="Delete" hidden>
             </div>  
         </form>
+
+        <div>
+           <h2>Events</h2><hr><br> 
+        </div>
+        <div class="forms">
+            <form id="updateEventForm">
+                <h2>Update an Event</h2>
+                <div class="form-row">
+                    <label for="eventName">Event Name:</label>
+                    <select name="eventName">
+                        <!-- Event options will go here-->
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="eventDate">Event Date:</label>
+                    <input id="eventDate" class="form-input" type="text" name="eventDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="truckLocation">Truck Location:</label>
+                    <input id="truckLocation" class="form-input" type="text" name="truckLocation" required>
+                </div>
+                <div class="form-row">
+                    <label for="hours">Hours:</label>
+                    <input type="text" class="form-input" name="hours" required>
+                </div>
+                <div class="form-row">
+                    <label for="eventImage">Image (Please add in URL of image):</label>
+                    <input type="text" class="form-input" name="eventImage" required>
+                </div>
+                <button type="submit" id="updateEvent">Update Event</button>
+                <button type="submit" id="deleteEvent">Delete Event</button>
+            </form>
+            <form id="createEventForm">
+                <h2>Create an Event</h2>
+                <div class="form-row">
+                    <label for="eventName">Event Name:</label>
+                    <input id="eventName" class="form-input" type="text" name="eventName" required>
+                </div>
+                <div class="form-row">
+                    <label for="eventDate">Event Date:</label>
+                    <input id="eventDate" class="form-input" type="text" name="eventDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="truckLocation">Truck Location:</label>
+                    <input id="truckLocation" class="form-input" type="text" name="truckLocation" required>
+                </div>
+                <div class="form-row">
+                    <label for="hours">Hours:</label>
+                    <input type="hours" class="form-input" name="hours" required>
+                </div>
+                <div class="form-row">
+                    <label for="eventImage">Image (Please add in URL of image):</label>
+                    <input type="eventImage" class="form-input" name="eventImage" required>
+                </div>
+                <button type="submit" id="createEvent">Create Event</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Menu</h2><hr><br> 
+         </div>
+         <div class="forms">
+             <form id="updateEventForm">
+                 <h2>Update a Menu Item</h2>
+                 <div class="form-row">
+                     <label for="itemName">Menu Item Name:</label>
+                     <select name="itemName">
+                         <!-- Menu item options will go here-->
+                     </select>
+                 </div>
+                 <div class="form-row">
+                     <label for="itemDescription">Item Description:</label>
+                     <input id="itemDescription" class="form-input" type="text" name="itemDescription" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="itemPrice">Item Price:</label>
+                     <input id="itemPrice" class="form-input" type="text" name="itemPrice" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="itemImage">Image (Please add in URL of image):</label>
+                     <input type="hours" class="form-input" name="hours" required>
+                 </div>
+                 <button type="submit" id="updateEvent">Update Menu Item</button>
+                 <button type="submit" id="deleteEvent">Delete Menu Item</button>
+             </form>
+             <form id="createEventForm">
+                 <h2>Create a Menu Item</h2>
+                 <div class="form-row">
+                     <label for="eventName">Event Name:</label>
+                     <input id="eventName" class="form-input" type="text" name="eventName" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="eventDate">Event Date:</label>
+                     <input id="eventDate" class="form-input" type="text" name="eventDate" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="truckLocation">Truck Location:</label>
+                     <input id="truckLocation" class="form-input" type="text" name="truckLocation" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="hours">Hours:</label>
+                     <input type="hours" class="form-input" name="hours" required>
+                 </div>
+                 <div class="form-row">
+                     <label for="eventImage">Image (Please add in URL of image):</label>
+                     <input type="eventImage" class="form-input" name="eventImage" required>
+                 </div>
+                 <button type="submit" id="createEvent">Create Event</button>
+             </form>
+         </div> 
+
     </main>
     <footer>
         <small><p>&copy; 2024 Wheely Good BBQ LLC</p></small>
