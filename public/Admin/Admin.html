@@ -22,24 +22,26 @@
 
             </ul>
             <div class="eventInputs">
-                <input required class="eventName" type="text" >
-                <input required class="eventDate" type="text" >
-                <input required class="truckLocation" type="text" >
-                <input required class="hours" type="text">
+                <input required class="eventName" name="eventName" type="text" >
+                <input required class="eventDate" name="eventDate" type="text" >
+                <input required class="truckLocation" name="truckLocation" type="text" >
+                <input required class="hours" name="hours" type="text">
+                <input required class="imagepath" name="Eimagepath" type="text">
                 <input type="submit" id="update_create" value="Create">
                 <input type="submit" id="delete" value="Delete" hidden >
             </div>
         </form>
-        <form>
+        <form id="menuForm">
             <ul class="menuList">
 
             </ul>
             <div class="menuInputs">
-                <input required class="name" type="text" >
-                <input required class="description" type="text" >
-                <input required class="price" type="text" >
-                <input type="submit" id="update_create" value="Create">
-                <input type="submit" id="delete" value="Delete">
+                <input required class="name" name="name" type="text" >
+                <input required class="description" name="description" type="text" >
+                <input required class="price" name="price" type="text" >
+                <input required class="Mimagepath" name="Mimagepath" type="text">
+                <input type="submit" id="Mupdate_create" value="Create">
+                <input type="submit" id="Mdelete" value="Delete" hidden>
             </div>  
         </form>
     </main>

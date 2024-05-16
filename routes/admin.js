@@ -49,4 +49,23 @@ route.post('/events',async(request,response)=>{
     response.json(result)
 })
 
+route.delete('/events/:id', async(request,response) => {
+    const { id } = request.params
+    const collection = await getCollection('WheelyGoodBBQ','events')
+    const result = await collection.deleteOne({_id: new ObjectId(id)})
+    response.json(result)
+})
+
+route.put('/events/:id', async(request,response) => {
+    const { body, params } = request
+    const { id } = params
+    const { eventName, eventDate, truckLocation, hours, imagePath } = body
+    
+    const collection = await getCollection('WheelyGoodBBQ','events')
+
+    const eventItem = await collection.findOne({_id: new ObjectId(id)})
+    const result = await collection.updateOne({_id: new ObjectId(id)}, { $set: { eventName, eventDate, truckLocation, hours, imagePath} })
+    response.json(result)
+})
+
 module.exports = route
